@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  height: 100%;
+  color: white;
+  font-family: Pixelify Sans, sans-serif;
+  font-size: 23px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: white;
+  color: #2d4b7a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #e2e8f0;
+}
+
+.account-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.options-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-item {
+  color: #102254;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}

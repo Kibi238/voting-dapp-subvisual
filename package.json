@@ -1,0 +1,21 @@
+{
+  "name": "voting-dapp-subvisual",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.22.6"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
