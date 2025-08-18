@@ -1,13 +1,52 @@
-# Sample Hardhat Project
+# Voting Dapp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This is a DApp project constructed with React + Javascript (frontend) and Hardhat + Solidity (backend) to select candidates to apprendiceship program at Subvisual
 
-Try running some of the following tasks:
+## Starting:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+### You will need:
+<li>To have MetaMask installed and an account
+
+### Installing:
+first of all, clone the repo
+```bash
+git clone https://github.com/seu-usuario/voting-dapp-subvisual.git
 ```
+install the dependencies
+```shell
+npm install
+npx hardhat node
+npx hardhat run scripts/deploy.js --network localhost
+
+```
+then, copy the contract address exibited in the terminal
+```text
+EX: voting contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+```
+paste it on <strong> src/App.jsx </strong> file
+```text
+const contractAddress = "...insert address here..."; // 
+```
+start the app
+```bash
+cd frontend
+npm run dev
+```
+
+## Important points
+<li>the app expects you to be using Hardhat local network (chainId 31337) </li>
+<li>there's a little joke in it :)
+
+## Testing
+tests include:
+<li>each person can only vote once</li>
+<li>the votes should be counted correctly</li>
+
+to run the tests use:
+```bash
+npx hardhat test
+```
+
+## Technical decisions
+<li>Hardhat: allouds to test without real ETH</li>
+<li>toast: better UX, less intrusive than alerts</li>
