@@ -50,3 +50,9 @@ npx hardhat test
 ## Technical decisions
 <li>Hardhat: allouds to test without real ETH</li>
 <li>toast: better UX, less intrusive than alerts</li>
+
+#
+
+
+<img width="1837" height="852" alt="Captura de tela 2025-08-18 173417" src="https://github.com/user-attachments/assets/48a3863a-cda3-4929-bbc8-f497932e9d39" />
+<img width="1843" height="863" alt="Captura de tela 2025-08-18 173310" src="https://github.com/user-attachments/assets/116fd2e8-9780-4b76-ae59-a5ee74793fb4" />
